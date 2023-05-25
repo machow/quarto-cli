@@ -1,0 +1,40 @@
+title: Quartodoc
+author: RStudio, PBC
+organization: quarto
+contributes:
+  project:
+    project:
+      type: website
+
+      detect:
+        - ["_quartodoc.yml", "content"]
+
+      metadata-files:
+        - _sidebar.yml
+
+      quartodoc:
+        # the name used to import the package
+        package: quartodoc
+      
+        # write sidebar data to this file
+        sidebar: _sidebar.yml
+      
+        sections:
+          - title: Some functions
+            desc: Functions to inspect docstrings.
+            contents:
+              # the functions being documented in the package.
+              # you can refer to anything: class methods, modules, etc..
+              - get_object
+              - preview
+      
+      #render:
+      #  - "**/*.qmd"
+      #  - "**/*.ipynb"
+      #preview:
+      #  serve:
+      #    cmd: "hugo serve --port {port} --bind {host} --navigateToChanged"
+      #    env:
+      #      HUGO_RELATIVEURLS: "true"
+      #    ready: "Web Server is available at"
+    #format: hugo-md

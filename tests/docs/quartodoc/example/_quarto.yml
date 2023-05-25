@@ -1,0 +1,8 @@
+project: 
+  type: quartodoc
+
+## Note that this works if uncommented, but the same thing set in the
+## extension doesn't seem to get picked up.
+# metadata-files:
+#   - _sidebar.yml
+
